@@ -215,14 +215,6 @@ Create test accounts:
 4. Admin adds Member to project
 5. Member can view and update tasks
 
-## 📹 Demo Video
-
-Create a 2-5 minute demo showing:
-1. User registration and login
-2. Project creation and team management
-3. Task creation and status tracking
-4. Dashboard with stats
-5. Role-based access control in action
 
 ## 📝 Project Structure
 
