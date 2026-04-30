@@ -1,0 +1,151 @@
+.tasks-page {
+  padding: 30px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.task-form {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 15px;
+  align-items: end;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.task-form input:focus,
+.task-form textarea:focus,
+.task-form select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.task-form button {
+  padding: 10px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 40px;
+}
+
+.tasks-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.status-column {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.status-column h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.task-card {
+  background: #f9f9f9;
+  border-left: 4px solid #667eea;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.task-card:hover {
+  transform: translateX(5px);
+}
+
+.task-card.done {
+  border-left-color: #27ae60;
+  opacity: 0.7;
+}
+
+.task-card.overdue {
+  border-left-color: #e74c3c;
+}
+
+.task-card h4 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.task-card p {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.task-meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+.priority {
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.priority-high {
+  background: #ffe0e0;
+  color: #c0392b;
+}
+
+.priority-medium {
+  background: #fff9e0;
+  color: #f39c12;
+}
+
+.priority-low {
+  background: #e0f2e0;
+  color: #27ae60;
+}
+
+.due-date {
+  color: #999;
+}
+
+.task-card select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+}

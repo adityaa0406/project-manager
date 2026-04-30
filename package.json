@@ -1,0 +1,19 @@
+{
+  "name": "project-manager",
+  "version": "1.0.0",
+  "description": "Full-stack project management app with role-based access control",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm run dev",
+    "client:build": "cd client && npm run build",
+    "build": "npm run client:build && echo 'Build complete'",
+    "postinstall": "npm install --prefix server && npm install --prefix client",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
