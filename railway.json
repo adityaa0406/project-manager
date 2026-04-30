@@ -4,6 +4,6 @@
     "builder": "nixpacks"
   },
   "deploy": {
-    "startCommand": "cd server && npm start"
+    "startCommand": "npm start"
   }
 }
